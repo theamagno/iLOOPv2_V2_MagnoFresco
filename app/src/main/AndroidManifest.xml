@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vrncthea.iloopv2_v2_magnofresco">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminPages.AdminHomePage" />
+        <activity android:name=".AdminPages.AllUsers" />
+        <activity android:name=".AdminPages.CreateUser" />
+        <activity android:name=".AdminPages.UpdateUser" />
+        <activity android:name=".OrgPages.OrgHomePage" />
+        <activity android:name=".AdminPages.ChooseUsers" />
+        <activity android:name=".AdminPages.AdminUsers" />
+        <activity android:name=".AdminPages.OrgUsers" />
+        <activity android:name=".StudentPages.StudentHomePage" />
+        <activity android:name=".ViewProfile" />
+        <activity android:name=".AdminPages.Announcements" />
+        <activity android:name=".AdminPages.UpdateAnnouncement" />
+        <activity android:name=".AdminPages.CreateAnnouncement" />
+        <activity android:name=".AdminPages.Activities" />
+        <activity android:name=".AdminPages.CreateActivity" />
+        <activity android:name=".AdminPages.UpdateActivity" />
+        <activity android:name=".AdminPages.ChooseActivities" />
+        <activity android:name=".AdminPages.ApprovedActivities" />
+        <activity android:name=".AdminPages.DeclinedActivities" />
+        <activity android:name=".AdminPages.PendingActivities" />
+        <activity android:name=".AdminPages.Notifications" />
+        <activity android:name=".OrgPages.OrgViewActivities" />
+        <activity android:name=".OrgPages.OrgApprovedActivities" />
+        <activity android:name=".OrgPages.OrgPendingActivities" />
+        <activity android:name=".OrgPages.OrgCreateActivity" />
+        <activity android:name=".OrgPages.OrgDeclinedActivities" />
+        <activity android:name=".StudentPages.StudAnnouncements" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".StudentPages.StudActivities"></activity>
+    </application>
+
+</manifest>

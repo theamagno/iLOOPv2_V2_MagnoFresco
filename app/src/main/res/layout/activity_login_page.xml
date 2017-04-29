@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vrncthea.iloopv2_v2_magnofresco.LoginPage"
+    android:background="@drawable/background"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="260dp"
+        android:id="@+id/linearLayout_FIRST">
+
+        <TextView
+            android:text="FOR ADMINISTRATORS AND ORGANIZATIONS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/textView_FORADMINSANDORGSLABEL" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:hint="USERNAME"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/editText_USERNAME" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:hint="PASSWORD"
+            android:ems="10"
+            android:id="@+id/editText_PASSWORD" />
+
+        <Button
+            android:text="LOGIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_LOGIN"
+            android:layout_marginTop="10dp"
+            android:onClick="LogIn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-350dp"
+        android:layout_marginBottom="150dp"
+        android:id="@+id/linearLayout_SECOND"
+        android:layout_below="@+id/linearLayout_FIRST">
+
+
+        <TextView
+            android:text="FOR STUDENTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/textView_FORSTUDENTS" />
+
+        <Button
+            android:text="LOGIN WITH GOOGLE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_LOGINFORSTUDENTS"
+            android:layout_marginTop="10dp"
+            android:onClick="LogInStudent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

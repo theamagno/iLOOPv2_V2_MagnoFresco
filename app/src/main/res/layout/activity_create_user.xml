@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vrncthea.iloopv2_v2_magnofresco.AdminPages.CreateUser"
+    android:background="@drawable/createuserbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="175dp">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ex. Juan Dela Cruz"
+            android:ems="15"
+            android:id="@+id/inputNameOfUser"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="290dp">
+
+        <TextView
+            android:text="Account Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountTypeLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <RadioGroup
+            android:id="@+id/accountTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:text="Administrator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountType_Admin"
+                android:layout_weight="1" />
+            <RadioButton
+                android:text="Organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountType_Org"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="405dp">
+
+        <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ex. THEAMAGNO"
+            android:ems="15"
+            android:id="@+id/inputUsername"
+            android:inputType="textCapCharacters"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="520dp">
+
+        <TextView
+            android:text="Email Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ex. theamagno@gmail.com"
+            android:ems="15"
+            android:id="@+id/inputEmail"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="630dp">
+
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="15"
+            android:id="@+id/inputPassword"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="745dp">
+
+        <TextView
+            android:text="Account Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accountStatusLabel"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textSize="30sp"/>
+
+        <RadioGroup
+            android:id="@+id/accountStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:text="Active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountStatus_Active"
+                android:layout_weight="1" />
+            <RadioButton
+                android:text="Inactive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accountStatus_Inactive"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="280dp">
+
+        <Button
+            android:text="Create"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/createUserButton"
+            android:background="@color/approve"
+            android:onClick="createAccount" />
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/cancelButton"
+            android:onClick="goBack"
+            android:background="@color/decline"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

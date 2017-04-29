@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="location_array">
+        <item>Roque Ruano Building (Engineering)</item>
+        <item>Albertus Magnus Building (CTHM)</item>
+        <item>Beato Angelico Building (Architecture)</item>
+        <item>St. Raymund of Penafort Building (AB)</item>
+        <item>Martin de Porres Building (Medicine)</item>
+        <item>UST Main Building</item>
+        <item>Benavides Park</item>
+        <item>BGPOP Building</item>
+        <item>Quadricentenial Park</item>
+        <item>UST Library</item>
+        <item>Seminary Gym</item>
+        <item>Football Field</item>
+        <item>Tan Yan Kee Building</item>
+        <item>Quadricentenial Pavilion Building</item>
+    </string-array>
+
+
+</resources>
